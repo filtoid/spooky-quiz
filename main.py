@@ -3,6 +3,7 @@ from game import Game
 
 def draw(screen, game):
     screen.fill((0, 0, 0))
+    game.draw(screen)
     pygame.display.flip()
     pass
 

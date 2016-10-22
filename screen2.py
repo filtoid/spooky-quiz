@@ -1,3 +1,5 @@
+import pygame
+
 class Screen2(object):
     def __init__(self):
         self.last_answer = None

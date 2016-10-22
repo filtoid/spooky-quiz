@@ -1,3 +1,4 @@
+import pygame
 from screen1 import Screen1
 
 class Game(object):
