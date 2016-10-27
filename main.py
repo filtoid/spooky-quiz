@@ -11,7 +11,7 @@ def main(game):
 
     size = width, height = (600, 400)
     screen = pygame.display.set_mode(size)
-    pygame.display.set_caption('Poke-man')
+    pygame.display.set_caption('Spooky Quiz')
 
     quit = False
     while quit == False:
