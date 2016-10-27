@@ -1,5 +1,5 @@
 import pygame
-from screen10 import Screen10
+# from screen10 import Screen10
 
 class Screen9(object):
     def __init__(self):
@@ -16,32 +16,32 @@ class Screen9(object):
         textpos.left = 200
         screen.blit(text, textpos)
 
-        question = font.render("Which of the following ISN’T a common medium", 1, (255, 255, 0))
+        question = font.render("What monsters are known for hiding in closets,", 1, (255, 255, 0))
         q_pos = question.get_rect()
         q_pos.top = 65
         screen.blit(question, q_pos)
 
-        q2 = font.render("used in the rituals of Witches?", 1, (255, 255,0))
+        q2 = font.render("basements, under beds and other dark places?", 1, (255, 255,0))
         q2_pos = q2.get_rect()
         q2_pos.top = q_pos.top + 35
         screen.blit(q2, q2_pos)
 
-        a1 = font.render("a. Cellphones", 1, (255, 255, 0))
+        a1 = font.render("a. Boogeymen", 1, (255, 255, 0))
         a1_pos = a1.get_rect()
         a1_pos.top = q2_pos.top + 45
         screen.blit(a1, a1_pos)
 
-        a2 = font.render("b. Their Hair", 1, (255, 255, 0))
+        a2 = font.render("b. Ghosts", 1, (255, 255, 0))
         a2_pos = a2.get_rect()
         a2_pos.top = a1_pos.top + 35
         screen.blit(a2, a2_pos)
 
-        a3 = font.render("c. Honey", 1, (255, 255, 0))
+        a3 = font.render("c. Zombies", 1, (255, 255, 0))
         a3_pos = a3.get_rect()
         a3_pos.top = a2_pos.top + 35
         screen.blit(a3, a3_pos)
 
-        a4 = font.render("d. Candles", 1, (255, 255, 0))
+        a4 = font.render("d. Chickens", 1, (255, 255, 0))
         a4_pos = a4.get_rect()
         a4_pos.top = a3_pos.top + 35
         screen.blit(a4, a4_pos)
@@ -75,7 +75,8 @@ class Screen9(object):
         return False
 
     def next(self):
-        return Screen10()
+        return None
+        # return Screen8()
 
     def get_error_message(self):
         return "That is incorrect try again"
