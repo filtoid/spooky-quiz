@@ -1,7 +1,7 @@
 import pygame
-from screen6 import Screen6
+#from screen7 import Screen7
 
-class Screen5(object):
+class Screen6(object):
     def __init__(self):
         self.last_answer = None
         self.last_answer_value = None
@@ -11,17 +11,17 @@ class Screen5(object):
     def draw(self, screen):
         #If last_answer is False then print the error message
         font = pygame.font.Font(None, 36)
-        text = font.render("Question 5", 1, (255, 255, 0))
+        text = font.render("Question 6", 1, (255, 255, 0))
         textpos = text.get_rect()
         textpos.left = 200
         screen.blit(text, textpos)
 
-        question = font.render("Which metal is a fatal weakness to ", 1, (255, 255, 0))
+        question = font.render(" ", 1, (255, 255, 0))
         q_pos = question.get_rect()
         q_pos.top = 65
         screen.blit(question, q_pos)
 
-        q2 = font.render("werewolves?", 1, (255, 255,0))
+        q2 = font.render("?", 1, (255, 255,0))
         q2_pos = q2.get_rect()
         q2_pos.top = q_pos.top + 35
         screen.blit(q2, q2_pos)
@@ -75,7 +75,8 @@ class Screen5(object):
         return False
 
     def next(self):
-        return Screen6()
+        return None
+        # return Screen7()
 
     def get_error_message(self):
         return "That is incorrect try again"

@@ -16,32 +16,32 @@ class Screen4(object):
         textpos.left = 200
         screen.blit(text, textpos)
 
-        question = font.render("What powers do most dragons commonly", 1, (255, 255, 0))
+        question = font.render("What is the name of the scientist who brings a", 1, (255, 255, 0))
         q_pos = question.get_rect()
         q_pos.top = 65
         screen.blit(question, q_pos)
 
-        q2 = font.render("have?", 1, (255, 255,0))
+        q2 = font.render("monster to life in a book by Mary Shelley?", 1, (255, 255,0))
         q2_pos = q2.get_rect()
         q2_pos.top = q_pos.top + 35
         screen.blit(q2, q2_pos)
 
-        a1 = font.render("a. Flight and Fire-Breath", 1, (255, 255, 0))
+        a1 = font.render("a. Frankenstein", 1, (255, 255, 0))
         a1_pos = a1.get_rect()
         a1_pos.top = q2_pos.top + 45
         screen.blit(a1, a1_pos)
 
-        a2 = font.render("b. Mind Reading and Teleportation", 1, (255, 255, 0))
+        a2 = font.render("b. Rick", 1, (255, 255, 0))
         a2_pos = a2.get_rect()
         a2_pos.top = a1_pos.top + 35
         screen.blit(a2, a2_pos)
 
-        a3 = font.render("c. Sorcery and Invisibility", 1, (255, 255, 0))
+        a3 = font.render("c. Neo Cortex", 1, (255, 255, 0))
         a3_pos = a3.get_rect()
         a3_pos.top = a2_pos.top + 35
         screen.blit(a3, a3_pos)
 
-        a4 = font.render("d. Eye Beams and Dimension Travel", 1, (255, 255, 0))
+        a4 = font.render("d. Fiji", 1, (255, 255, 0))
         a4_pos = a4.get_rect()
         a4_pos.top = a3_pos.top + 35
         screen.blit(a4, a4_pos)
