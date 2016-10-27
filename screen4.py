@@ -5,9 +5,8 @@ class Screen4(object):
     def __init__(self):
         self.last_answer = None
         self.last_answer_value = None
-
-	self.MAX_TIMER = 20
-	self.cooldown_timer = self.MAX_TIMER 
+        self.MAX_TIMER = 20
+        self.cooldown_timer = self.MAX_TIMER
 
     def draw(self, screen):
         #If last_answer is False then print the error message
@@ -22,10 +21,10 @@ class Screen4(object):
         q_pos.top = 65
         screen.blit(question, q_pos)
 
-	q2 = font.render("have?", 1, (255, 255,0))
-	q2_pos = q2.get_rect()
-	q2_pos.top = q_pos.top + 35
-	screen.blit(q2, q2_pos)
+        q2 = font.render("have?", 1, (255, 255,0))
+        q2_pos = q2.get_rect()
+        q2_pos.top = q_pos.top + 35
+        screen.blit(q2, q2_pos)
 
         a1 = font.render("a. Flight and Fire-Breath", 1, (255, 255, 0))
         a1_pos = a1.get_rect()
@@ -65,7 +64,7 @@ class Screen4(object):
             return True
         elif keys[pygame.K_b] or keys[pygame.K_c] or keys[pygame.K_d]:
             self.last_answer = False
-            self.cooldown_timer = self.MAX_TIMER 
+            self.cooldown_timer = self.MAX_TIMER
             if keys[pygame.K_b]:
                 self.last_answer_value = 'b'
             elif keys[pygame.K_c]:
