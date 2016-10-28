@@ -16,7 +16,7 @@ class Screen8(object):
         textpos.left = 200
         screen.blit(text, textpos)
 
-        question = font.render("What is the name of Jack Skellington’s ghostly", 1, (255, 255, 0))
+        question = font.render("What is the name of Jack Skellington's ghostly", 1, (255, 255, 0))
         q_pos = question.get_rect()
         q_pos.top = 65
         screen.blit(question, q_pos)

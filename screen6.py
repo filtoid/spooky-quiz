@@ -16,7 +16,7 @@ class Screen6(object):
         textpos.left = 200
         screen.blit(text, textpos)
 
-        question = font.render("Which of the following ISN’T something ", 1, (255, 255, 0))
+        question = font.render("Which of the following ISN'T something ", 1, (255, 255, 0))
         q_pos = question.get_rect()
         q_pos.top = 65
         screen.blit(question, q_pos)

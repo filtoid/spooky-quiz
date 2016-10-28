@@ -1,7 +1,7 @@
 import pygame
 # from screen10 import Screen10
 
-class Screen9(object):
+class Screen10(object):
     def __init__(self):
         self.last_answer = None
         self.last_answer_value = None
